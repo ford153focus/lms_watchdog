@@ -1,0 +1,57 @@
+{
+    "slack": {
+        "channel": "#buspay_zabbix"
+    },
+    "cpu_watcher": [
+        {
+            "critical_value": 95,
+            "attempts_before_fail": 3
+        },
+        {
+            "critical_value": 80,
+            "attempts_before_fail": 5
+        }
+    ],
+    "ram_watcher": [
+        {
+            "critical_value": 200,
+            "attempts_before_fail": 1
+        }
+    ],
+    "disk_watcher": [
+        {
+            "critical_value": 1,
+            "attempts_before_fail": 1
+        }
+    ],
+    "host_availability": [
+        {
+            "host": "back1",
+            "ports": [
+                22
+            ],
+            "attempts_before_fail": 1
+        },
+        {
+            "host": "balancer1",
+            "ports": [
+                22
+            ],
+            "attempts_before_fail": 1
+        },
+        {
+            "host": "front1",
+            "ports": [
+                22
+            ],
+            "attempts_before_fail": 1
+        },
+        {
+            "host": "prerender1",
+            "ports": [
+                22
+            ],
+            "attempts_before_fail": 1
+        }
+    ]
+}
